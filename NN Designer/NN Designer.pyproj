@@ -1,0 +1,269 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8ca25c12-5678-4e81-9b94-1a19d9c96388</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>Server\module1.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>NN Designer</Name>
+    <RootNamespace>NN Designer</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda_4.1.1_64-bit</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Scripts\" />
+    <Folder Include="Server\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\dist\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\src\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\tests\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\tests\unit\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\tests\vendor\" />
+    <Folder Include="Resources\CSS\Bootstrap\js\tests\visual\" />
+    <Folder Include="Resources\CSS\Bootstrap\scss\" />
+    <Folder Include="Resources\CSS\Bootstrap\scss\mixins\" />
+    <Folder Include="Resources\CSS\Bootstrap\scss\utilities\" />
+    <Folder Include="Resources\HTML\" />
+    <Folder Include="Resources\CSS\" />
+    <Folder Include="Resources\CSS\Bootstrap\" />
+    <Folder Include="Server\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CSS\Bootstrap\js\.eslintrc.json" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\alert.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\alert.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\button.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\button.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\carousel.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\carousel.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\collapse.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\collapse.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\dropdown.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\dropdown.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\index.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\index.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\modal.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\modal.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\popover.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\popover.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\scrollspy.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\scrollspy.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\tab.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\tab.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\tooltip.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\tooltip.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\util.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\dist\util.js.map" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\alert.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\button.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\carousel.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\collapse.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\dropdown.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\index.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\modal.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\popover.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\scrollspy.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\tab.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\tooltip.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\src\util.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\.eslintrc.json" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\index.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\karma.conf.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\README.md" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\alert.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\button.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\carousel.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\collapse.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\dropdown.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\modal.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\popover.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\scrollspy.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\tab.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\tooltip.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\unit\util.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\vendor\jquery-1.9.1.min.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\alert.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\button.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\carousel.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\collapse.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\dropdown.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\modal.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\popover.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\scrollspy.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\tab.html" />
+    <Content Include="Resources\CSS\Bootstrap\js\tests\visual\tooltip.html" />
+    <Content Include="Resources\CSS\Bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\bootstrap.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_float.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_image.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_size.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_align.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_background.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_display.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_float.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_position.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_text.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_alert.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_badge.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_button-group.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_buttons.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_card.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_carousel.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_close.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_code.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_custom-forms.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_dropdown.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_forms.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_functions.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_grid.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_images.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_input-group.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_jumbotron.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_list-group.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_media.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_mixins.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_modal.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_nav.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_navbar.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_pagination.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_popover.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_print.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_progress.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_reboot.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_root.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_tables.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_tooltip.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_transitions.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_type.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_utilities.scss" />
+    <Content Include="Resources\CSS\Bootstrap\scss\_variables.scss" />
+    <Content Include="Resources\CSS\Stylesheet.css" />
+    <Content Include="Resources\HTML\Home.html" />
+    <Content Include="Resources\Scripts\HomeController.js" />
+    <Content Include="Resources\Scripts\Jointjs.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Resources\Scripts\NetworkGraph.js" />
+    <Content Include="Server\file.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Server\DataLoader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server\RequestHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server\RequestHandler_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server\TFFactory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server\TFFactory_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda_4.1.1_64-bit" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

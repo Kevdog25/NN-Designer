@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/vis.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.6.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="/js/node_modules/vis/dist/vis.min.js" type="text/javascript"></script>
+    <script>
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = "/css/Stylesheet.css?id=" + Math.random();
+        link.media = 'all';
+        head.appendChild(link);
+        link = document.createElement('script');
+        link.type = 'text/javascript';
+        link.src = '/js/NetworkGraph.js?id=' + Math.random();
+        head.appendChild(link);
+        link = document.createElement('script');
+        link.type = 'text/javascript';
+        link.src = '/js/HomeController.js?id=' + Math.random();
+        head.appendChild(link);
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="right-bar well">
+        <canvas id="canvas" style="height:256px; width:256px"></canvas>
+        <button id="btn:AddData" class="btn btn-default">Add Data</button>
+        <button id="btn:CompileGraph" class="btn btn-default">Compile Graph</button>
+        <button id="btn:EvalNode" class="btn btn-default">Eval Node</button>
+        <span id="spn:CompileStatus"></span>
+        <span id="spn:EvalResult"></span>
+    </div>
+    <div class="left-bar well">
+        <h2 style="align-self:center">
+            Toolbox
+        </h2>
+        <h3 style="align-self:center">
+            Components
+        </h3>
+        <table>
+            <tr>
+                <td>
+                    <button id="btn:AddFileSource" class="btn btn-default">
+                        File Source
+                    </button>
+                </td>
+                <td>
+                    <button id="btn:AddLayer" class="btn btn-default">
+                        Hidden Layer
+                    </button>
+                </td>
+                <td>
+                    <button id="btn:AddOutput" class="btn btn-default">
+                        Output
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btn:AddVariable" class="btn btn-default">
+                        Variable
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <h3 style="align-self:center">
+            Operations
+        </h3>
+        <table>
+            <tr>
+                <td>
+                    <button id="btn:Multiply" class="btn btn-default">
+                        Multiply
+                    </button>
+                </td>
+                <td>
+                    <button id="btn:Add" class="btn btn-default">
+                        Add
+                    </button>
+                </td>
+                <td>
+                    <button id="btn:Subtract" class="btn btn-default">
+                        Subtract
+                    </button>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <div id="middleBits" class="middle-bits well">
+    </div>
+    <div id="editPane" class="bottom-bar well">
+        <label for="inp:NameInput">Name</label>
+        <input id="inp:NameInput" type="text"/>
+        <div id="div:Expression"><span>Expression: </span><span id="spn:Expression"></span></div>
+        <br />
+        <div id="div:Inputs">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
